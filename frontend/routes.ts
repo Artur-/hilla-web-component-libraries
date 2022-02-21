@@ -22,16 +22,6 @@ export const views: ViewRoute[] = [
     icon: 'la la-globe',
     title: 'Hello World',
   },
-  {
-    path: 'about',
-    component: 'about-view',
-    icon: 'la la-file',
-    title: 'About',
-    action: async (_context, _command) => {
-      await import('./views/about/about-view');
-      return;
-    },
-  },
 ];
 export const routes: ViewRoute[] = [
   {
