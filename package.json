@@ -127,7 +127,8 @@
     "construct-style-sheets-polyfill": "3.0.4",
     "line-awesome": "1.3.0",
     "lit": "2.0.0",
-    "mobx": "^6.3.5"
+    "mobx": "^6.3.5",
+    "wired-elements": "^3.0.0-rc.6"
   },
   "devDependencies": {
     "@vaadin/application-theme-plugin": "./target/plugins/application-theme-plugin",
@@ -269,7 +270,8 @@
     "@spectrum-web-components/field-label": "$@spectrum-web-components/field-label",
     "@spectrum-web-components/textfield": "$@spectrum-web-components/textfield",
     "@spectrum-web-components/theme": "$@spectrum-web-components/theme",
-    "@spectrum-web-components/toast": "$@spectrum-web-components/toast"
+    "@spectrum-web-components/toast": "$@spectrum-web-components/toast",
+    "wired-elements": "$wired-elements"
   },
   "vaadin": {
     "dependencies": {
@@ -402,6 +404,6 @@
       "workbox-core": "6.4.2",
       "workbox-precaching": "6.4.2"
     },
-    "hash": "32f001070de7cb9febf1fbe4e34f83b2215aa44eef3a3089d1843de989d0fa9c"
+    "hash": "6ba32c82f13dfda21c9af80ed7e13653e333ae54a38d31e7fb9175d6cb291016"
   }
 }
