@@ -13,6 +13,7 @@
     "@polymer/iron-meta": "3.0.1",
     "@polymer/iron-resizable-behavior": "3.0.1",
     "@polymer/polymer": "3.4.1",
+    "@ui5/webcomponents": "^1.1.2",
     "@vaadin/accordion": "23.0.0-beta3",
     "@vaadin/app-layout": "23.0.0-beta3",
     "@vaadin/avatar": "23.0.0-beta3",
@@ -253,6 +254,7 @@
     "@vaadin/map": "$@vaadin/map",
     "@adobe/lit-mobx": "$@adobe/lit-mobx",
     "@polymer/polymer": "$@polymer/polymer",
+    "@ui5/webcomponents": "$@ui5/webcomponents",
     "@vaadin/common-frontend": "$@vaadin/common-frontend",
     "construct-style-sheets-polyfill": "$construct-style-sheets-polyfill",
     "line-awesome": "$line-awesome",
@@ -392,6 +394,6 @@
       "workbox-core": "6.4.2",
       "workbox-precaching": "6.4.2"
     },
-    "hash": "66c530d7288b35db9c30ae2f2d8ffb986e0054c09584e9823c40deafba5cb545"
+    "hash": "ba4c9b601602a8dac7834e610cac8e3ca2d15481f44cc374dad127cd46d97a82"
   }
 }

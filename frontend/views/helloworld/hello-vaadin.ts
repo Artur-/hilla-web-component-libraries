@@ -4,9 +4,9 @@ import { Notification } from '@vaadin/notification';
 import '@vaadin/text-field';
 import { html } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import { View } from '../../views/view';
+import { View } from '../view';
 
-@customElement('hello-world-view')
+@customElement('hello-vaadin')
 export class HelloWorldView extends View {
   name = '';
 
