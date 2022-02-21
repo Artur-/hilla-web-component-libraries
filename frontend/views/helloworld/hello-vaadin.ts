@@ -2,6 +2,7 @@ import '@vaadin/button';
 import '@vaadin/notification';
 import { Notification } from '@vaadin/notification';
 import '@vaadin/text-field';
+import { HelloEndpoint } from 'Frontend/generated/endpoints';
 import { html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { View } from '../view';
@@ -26,7 +27,10 @@ export class HelloWorldView extends View {
     this.name = e.detail.value;
   }
 
-  sayHello() {
-    Notification.show(`Hello ${this.name}`);
+
+  async sayHello() {
+    const response = await HelloEndpoint.sayHello(this.name);
+    Notification.show(response);
   }
+
 }

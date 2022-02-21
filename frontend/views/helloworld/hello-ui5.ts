@@ -1,6 +1,7 @@
 import "@ui5/webcomponents/dist/Button.js";
 import "@ui5/webcomponents/dist/MultiInput.js";
 import "@ui5/webcomponents/dist/Toast.js";
+import { HelloEndpoint } from "Frontend/generated/endpoints";
 import { html } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';
 import { View } from '../view';
@@ -9,6 +10,8 @@ import { View } from '../view';
 export class HelloWorldView extends View {
   @state()
   name = '';
+  @state()
+  response: string = '';
 
   @query("#toast")
   private toast!: any;
@@ -23,7 +26,7 @@ export class HelloWorldView extends View {
     <ui5-label>Your name</ui5-label>
       <ui5-multi-input @value-changed=${this.nameChanged}></ui5-multi-input>
       <ui5-button @click=${this.sayHello}>Say hello</ui5-button>
-      <ui5-toast id="toast" placement="BottomStart">Hello ${this.name}</ui5-toast>
+      <ui5-toast id="toast" placement="BottomStart">${this.response}</ui5-toast>
     `;
   }
 
@@ -31,7 +34,8 @@ export class HelloWorldView extends View {
     this.name = (e.target! as any).value;
   }
 
-  sayHello() {
+  async sayHello() {
+    this.response = await HelloEndpoint.sayHello(this.name);
     this.toast.show();
   }
 }
