@@ -1,6 +1,7 @@
 import { Route } from '@vaadin/router';
 import './views/helloworld/hello-vaadin';
 import './views/helloworld/hello-ui5';
+import './views/helloworld/hello-spectrum';
 import './views/main-layout';
 
 export type ViewRoute = Route & {
@@ -28,6 +29,12 @@ export const views: ViewRoute[] = [
     component: 'hello-ui5',
     icon: 'la la-globe',
     title: 'Hello UI5',
+  },
+  {
+    path: 'hello-spectrum',
+    component: 'hello-spectrum',
+    icon: 'la la-globe',
+    title: 'Hello Spectrum',
   },
 ];
 export const routes: ViewRoute[] = [

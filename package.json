@@ -13,6 +13,10 @@
     "@polymer/iron-meta": "3.0.1",
     "@polymer/iron-resizable-behavior": "3.0.1",
     "@polymer/polymer": "3.4.1",
+    "@spectrum-web-components/field-label": "^0.7.3",
+    "@spectrum-web-components/textfield": "^0.11.0",
+    "@spectrum-web-components/theme": "^0.9.3",
+    "@spectrum-web-components/toast": "^0.10.3",
     "@ui5/webcomponents": "^1.1.2",
     "@vaadin/accordion": "23.0.0-beta3",
     "@vaadin/app-layout": "23.0.0-beta3",
@@ -261,7 +265,11 @@
     "lit": "$lit",
     "mobx": "$mobx",
     "@hilla/form": "$@hilla/form",
-    "@hilla/frontend": "$@hilla/frontend"
+    "@hilla/frontend": "$@hilla/frontend",
+    "@spectrum-web-components/field-label": "$@spectrum-web-components/field-label",
+    "@spectrum-web-components/textfield": "$@spectrum-web-components/textfield",
+    "@spectrum-web-components/theme": "$@spectrum-web-components/theme",
+    "@spectrum-web-components/toast": "$@spectrum-web-components/toast"
   },
   "vaadin": {
     "dependencies": {
@@ -394,6 +402,6 @@
       "workbox-core": "6.4.2",
       "workbox-precaching": "6.4.2"
     },
-    "hash": "ba4c9b601602a8dac7834e610cac8e3ca2d15481f44cc374dad127cd46d97a82"
+    "hash": "32f001070de7cb9febf1fbe4e34f83b2215aa44eef3a3089d1843de989d0fa9c"
   }
 }
